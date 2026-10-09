@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>    
+    <title>Seatwork 1</title>
+    <style>
+    body {
+    font-family: system-ui, sans-serif;
+    background: #f9f9f9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .container {
+        background: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+        width: 100%;
+        max-width: 320px;
+        text-align: center;
+    }
+
+    input, button {
+    width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+
+    button {
+        background: #000;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    button:hover {
+        background: #333;
+    }
+
+    #result {
+        margin-top: 12px;
+        font-size: 14px;
+        word-wrap: break-word;
+    }    
+        </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Candidate Verification System</h1>
+    <div class="container" style="text-align: center; margin: 200px auto;">
+        <label>First name:</label>
+        <input type="text" id="First" placeholder="First Name"><br><br>
+         <label>Last name:</label>
+        <input type="text" id="Last" placeholder="Last Name"><br><br>
+        <button py-click="Search">Search</button>
+    </div>
+
+    <div id="result" style="text-align: center; font-weight: bold; font-size: 1.2rem;"></div>
+    <script type="py" src="main.py"></script>
+</body>
+</html>
